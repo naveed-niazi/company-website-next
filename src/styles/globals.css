@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  #__next {
+    @apply w-full table;
+  }
+  html,
+  body {
+    @apply h-full md:overflow-x-clip;
+  }
+  .form-label {
+    @apply text-slate-500 text-sm mb-1 tracking-wide;
+  }
+  .form-input {
+    @apply placeholder-slate-400 border border-slate-300 bg-slate-100 rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-0 focus:border focus:bg-slate-100 focus:border-slate-500;
+  }
+  .form-input-error {
+    @apply text-red-500 text-xs italic -mb-2 mt-1;
+  }
+  .banner-animate {
+    animation-name: banner-animate;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+  }
+  .banner-form-animate {
+    animation-name: banner-form-animate;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+  .banner-img-animate {
+    animation-name: banner-img-animate;
+    animation-duration: 0.5s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  .banner-img-animate span {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .banner-img {
+    margin-bottom: -22px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.embla {
+  position: relative;
+  max-width: "100%";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  height: 100%;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.break-all {
+  word-break: break-word;
+}
+.modal-layout {
+  height: 35rem;
+  width: 58rem;
+  margin: auto;
+  display: flex;
+}
+/* .PhoneInput {
+  @apply placeholder-slate-400 border border-slate-300 bg-slate-100 rounded-md w-full hover:border hover:bg-slate-100 hover:border-slate-500;
+} */
+.PhoneInputInput {
+  @apply bg-slate-100 py-2 px-2 h-10 ml-2 text-gray-700 border border-slate-300 rounded-md lining-nums  focus:outline-0 focus:border focus:bg-slate-100 focus:border-slate-500 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .modal-layout {
+    height: 95vh;
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    overflow-y: scroll;
+    padding: 1.5rem;
+  }
+}
+
+@keyframes banner-animate {
+  from {
+    @apply mt-16 opacity-0;
+  }
+  to {
+    @apply mt-0 opacity-100;
+  }
+}
+
+@keyframes banner-img-animate {
+  from {
+    @apply -right-20 opacity-0;
+  }
+  to {
+    @apply right-0 opacity-100 relative;
+  }
+}
+
+@keyframes banner-form-animate {
+  from {
+    @apply mt-24 opacity-0;
+  }
+  to {
+    @apply mt-8 opacity-100 relative;
+  }
+}
