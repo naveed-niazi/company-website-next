@@ -121,7 +121,7 @@ export const TEAM_CONTENT = [
     id: "team_02",
     name: "Naveed Abdullah",
     designation: "CO-FOUNDER & CTO",
-    linkedin: "https://www.linkedin.com/in/naveed-abdullah-0007/",
+    linkedin: "https://www.linkedin.com/in/naveedniazi/",
     photo:
       "https://media.licdn.com/dms/image/D4D03AQHktZzi7jZuYw/profile-displayphoto-shrink_800_800/0/1674733636635?e=1680134400&v=beta&t=fFvUP57oAjUUb9_tiLQretVTZz3uz4GtrYm4cXcfW1w",
   },
