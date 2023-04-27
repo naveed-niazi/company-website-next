@@ -9,6 +9,7 @@ import { useAppContext } from "../../context";
 export default function NavigationBar({ setNavbarOpen }) {
   const [selected, setSelected] = useState(menuItems[0].path);
   const [activeSection, setActiveSection] = useAppContext();
+  const [navbarShadow, setNavbarShadow] = useState(false);
 
   const scrollRef = useRef(menuItems[0].path);
   const calcDistance = () => {
@@ -20,6 +21,8 @@ export default function NavigationBar({ setNavbarOpen }) {
     return menuItems[temp].path;
   };
   const onScroll = useCallback((event) => {
+    if (window.scrollY > 70) setNavbarShadow(true);
+    else setNavbarShadow(false);
     const navBarHeight = document
       .getElementById("navbar")
       .getBoundingClientRect().height;
@@ -50,7 +53,9 @@ export default function NavigationBar({ setNavbarOpen }) {
   return (
     <nav
       id="navbar"
-      className="z-20 top-0 fixed  w-full flex flex-wrap items-center justify-between px-2  bg-white shadow"
+      className={`z-20 top-0 fixed  w-full flex flex-wrap items-center justify-between px-2  bg-white ${
+        navbarShadow ? "apply-shadow" : ""
+      }`}
     >
       <div className="w-full">
         <div className="block">

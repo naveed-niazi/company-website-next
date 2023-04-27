@@ -1,4 +1,7 @@
-import pnr_img from "../assets/pnr-portal.jpg";
+import pnr_img from "../assets/pnr_portal.png";
+import rohanImg from "../assets/rohan_profile.jpg";
+import naveedImg from "../assets/naveed_profile.jpg";
+import mubarrimImg from "../assets/mubarrim_profile.jpg";
 
 export const SERVICES_CONTENT = [
   {
@@ -114,24 +117,21 @@ export const TEAM_CONTENT = [
     name: "Rohan Taufique",
     designation: "CO-FOUNDER & CEO",
     linkedin: "https://www.linkedin.com/in/rohantaufique/",
-    photo:
-      "https://media.licdn.com/dms/image/C4D03AQGfg-2ICvY15Q/profile-displayphoto-shrink_800_800/0/1656657064893?e=1680134400&v=beta&t=8BVqZtc22MBD0Zk8BE4ToK4iU5LDWHR70EE5E8_wbjI",
+    photo: rohanImg,
   },
   {
     id: "team_02",
     name: "Naveed Abdullah",
     designation: "CO-FOUNDER & CTO",
-    linkedin: "https://www.linkedin.com/in/naveedniazi/",
-    photo:
-      "https://media.licdn.com/dms/image/D4D03AQHktZzi7jZuYw/profile-displayphoto-shrink_800_800/0/1674733636635?e=1680134400&v=beta&t=fFvUP57oAjUUb9_tiLQretVTZz3uz4GtrYm4cXcfW1w",
+    linkedin: "https://www.linkedin.com/in/naveed-abdullah-0007/",
+    photo: naveedImg,
   },
   {
     id: "team_03",
     name: "Mubarrim Iqbal",
     designation: "CHIEF BUSINESS OFFICER",
     linkedin: "https://www.linkedin.com/in/mubarrim/",
-    photo:
-      "https://media.licdn.com/dms/image/D5603AQHlUfDS_jOqaA/profile-displayphoto-shrink_800_800/0/1646060649511?e=1680134400&v=beta&t=4C-ChD_P1P5WeBfK8xAcXsNY160noJRk73H4EHpi23k",
+    photo: mubarrimImg,
   },
 ];
 

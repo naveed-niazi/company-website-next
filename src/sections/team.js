@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import rohanImg from "../assets/rohan-profile.png";
 import elonMuskImg from "../assets/elon_musk.png";
 import { TEAM_CONTENT } from "./constants";
 const Team = () => {

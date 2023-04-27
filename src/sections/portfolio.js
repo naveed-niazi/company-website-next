@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import rohanImg from "../assets/rohan-profile.png";
-import portfolio_1_img from "../assets/pnr-portal.jpg";
 import { PORTFOLIO_CONTENT } from "./constants";
 const Portfolio = () => {
   return (
